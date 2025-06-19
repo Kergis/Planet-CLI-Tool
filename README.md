@@ -14,11 +14,11 @@ Steps:
 - Path to area of interest (AOI) GeoJSON.
 
 Example:
-python planet_cli.py \
-  --api-key XXXXXXXXXX\ 
-  --start-time 2024-01-01T00:00:00Z
-  --end-time 2024-01-31T23:59:59Z
-  --geojson path/to/AOI/aoi.geojson
+python planet_cli.py
+  --api-key XXXXXXXXXX 
+  --start-time 2024-01-01T00:00:00Z \
+  --end-time 2024-01-31T23:59:59Z \ 
+  --geojson path/to/AOI/aoi.geojson \
 
 Considerations and next steps:
 
