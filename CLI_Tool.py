@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import os
 import os
 import time
@@ -138,10 +132,3 @@ if __name__ == "__main__":
         end_time=args.end_time,
         geojson_path=args.geojson,
     )
-
-
-# In[ ]:
-
-
-
-
