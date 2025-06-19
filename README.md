@@ -14,12 +14,12 @@ Steps:
 - Path to area of interest (AOI) GeoJSON.
 
 Example:
-python planet_cli.py
-  --api-key XXXXXXXXXX 
-  --start-time 2024-01-01T00:00:00Z \
-  --end-time 2024-01-31T23:59:59Z \ 
-  --geojson path/to/AOI/aoi.geojson \
+python planet_cli.py \
+--api-key XXXXXXXXXX \
+--start-time 2024-01-01T00:00:00Z \
+--end-time 2024-01-31T23:59:59Z \
+--geojson path/to/AOI/aoi.geojson 
 
 Considerations and next steps:
 
-One constraint of the Data API is that it returns a maximum result count of 250 per page, and therefor would require pagination to be able to return the remainder of results over 250. Another constraint would be rate limiting, which is specific to each API. For this constraint, one could code in an exponential backoff to slow down the request volume.
+There are of handful of factors and limitations to consider when submitting requests to the Data API and Orders API. One constraint of the Data API is that it returns a maximum result count of 250 per page, and therefor would require pagination to be able to return the remainder of results greater than 250. Another constraint would be rate limiting, which is specific to each API. For this constraint, one could code in an exponential backoff to slow down the request volume.
